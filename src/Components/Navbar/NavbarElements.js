@@ -27,6 +27,7 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 `;
 
+//Menu Icon should only be visible on smaller screens. When icon is clicked, displays side nav
 export const MenuIcon = styled.div`
   display: none;
 
@@ -42,6 +43,7 @@ export const MenuIcon = styled.div`
   }
 `;
 
+//NavMenu contains nav items with the links to about/projects/contact, display only large screens
 export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
@@ -54,10 +56,12 @@ export const NavMenu = styled.ul`
   }
 `;
 
+//NavItem is the container for each link i.e. About / Projects / Contact
 export const NavItem = styled.li`
   height: 80px;
 `;
 
+//Link is react scroll link. Links to relevant page
 export const NavLinks = styled(Link)`
   color: #fff;
   display: flex;

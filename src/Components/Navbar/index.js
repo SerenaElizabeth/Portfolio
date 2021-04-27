@@ -9,12 +9,12 @@ import {
 } from "./NavbarElements";
 import { FaBars } from "react-icons/fa";
 
-function Navbar() {
+function Navbar({ toggleIsOpen }) {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <MenuIcon>
+          <MenuIcon onClick={toggleIsOpen}>
             <FaBars />
           </MenuIcon>
           <NavMenu>

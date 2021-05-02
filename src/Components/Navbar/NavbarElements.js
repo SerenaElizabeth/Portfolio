@@ -2,15 +2,14 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: #000;
-  height: 80px;
-
+  background: black;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
   position: sticky;
-  top: 0;
+  top: 0px;
   z-index: 10;
 
   @media screen and (max-width: 960px) {
@@ -23,7 +22,6 @@ export const NavbarContainer = styled.div`
   height: 80px;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
   max-width: 1100px;
 `;
 
@@ -36,7 +34,7 @@ export const MenuIcon = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 60%);
+    transform: translate(-100%, 20%);
     font-size: 1.8rem;
     cursor: pointer;
     color: #fff;
@@ -49,7 +47,8 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
+  margin-right: 0px;
+  padding: 0;
 
   @media screen and (max-width: 800px) {
     display: none;
@@ -71,7 +70,12 @@ export const NavLinks = styled(Link)`
   height: 100%;
   cursor: pointer;
 
+  &:hover {
+    color: #9966cc;
+    transition: 0.2s ease-in-out;
+  }
+
   &.active {
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid #000;
   }
 `;

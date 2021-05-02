@@ -7,7 +7,7 @@ export const SideNavContainer = styled.aside`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #0d0d0d;
+  background: rgba(0, 0, 0, 0.9);
   display: grid;
   align-items: center;
   top: 0;
@@ -39,6 +39,8 @@ export const SideNavMenu = styled.ul`
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 80px);
   text-align: center;
+  margin: 0;
+  padding: 0;
 `;
 
 export const SideNavLink = styled(Link)`
@@ -49,7 +51,7 @@ export const SideNavLink = styled(Link)`
   cursor: pointer;
 
   &:hover {
-    color: limegreen;
+    color: #9966cc;
     transition: 0.2s ease-in-out;
   }
 `;

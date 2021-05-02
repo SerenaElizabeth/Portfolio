@@ -18,9 +18,15 @@ function SideNav({ isOpen, toggleIsOpen }) {
       </Icon>
       <SideNavWrapper>
         <SideNavMenu>
-          <SideNavLink to="about">About</SideNavLink>
-          <SideNavLink to="projects">Projects</SideNavLink>
-          <SideNavLink to="contact">Contact</SideNavLink>
+          <SideNavLink to="about" onClick={toggleIsOpen}>
+            About
+          </SideNavLink>
+          <SideNavLink to="projects" onClick={toggleIsOpen}>
+            Projects
+          </SideNavLink>
+          <SideNavLink to="contact" onClick={toggleIsOpen}>
+            Contact
+          </SideNavLink>
         </SideNavMenu>
       </SideNavWrapper>
     </SideNavContainer>

@@ -19,13 +19,28 @@ function Navbar({ toggleIsOpen }) {
           </MenuIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about"> About </NavLinks>
+              <NavLinks to="home" smooth={true} duration={1000}>
+                {" "}
+                Home{" "}
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="projects"> Projects </NavLinks>
+              <NavLinks to="about" smooth={true} duration={1000}>
+                {" "}
+                About{" "}
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="contact"> Contact </NavLinks>
+              <NavLinks to="projects" smooth={true} duration={1000}>
+                {" "}
+                Projects{" "}
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="contact" smooth={true} duration={1000}>
+                {" "}
+                Contact{" "}
+              </NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>

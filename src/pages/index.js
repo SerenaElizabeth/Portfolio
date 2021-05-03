@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import IntroPage from "../Components/IntroPage";
 import AboutPage from "../Components/AboutPage";
 import Projects from "../Components/Projects";
+import Contact from "../Components/Contact";
 
 import Navbar from "../Components/Navbar";
 import SideNav from "../Components/SideNav";
@@ -21,6 +22,7 @@ function Home() {
       <IntroPage />
       <AboutPage />
       <Projects />
+      <Contact />
     </>
   );
 }

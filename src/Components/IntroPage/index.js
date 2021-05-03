@@ -13,7 +13,7 @@ import video from "./video.mp4";
 
 function IntroPage() {
   return (
-    <IntroPageContainer>
+    <IntroPageContainer id="home">
       <IntroPageBackground>
         <VideoBg autoPlay muted loop src={video} type="video/mp4" />
       </IntroPageBackground>

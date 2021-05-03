@@ -15,7 +15,7 @@ import logo from "../../logo192.png";
 
 function AboutPage() {
   return (
-    <AboutPageContainer>
+    <AboutPageContainer id="about">
       <AboutPageWrapper>
         <AboutRow>
           <Column1>

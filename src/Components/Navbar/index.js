@@ -1,50 +1,44 @@
 import React from "react";
-import {
-  Nav,
-  NavbarContainer,
-  MenuIcon,
-  NavMenu,
-  NavItem,
-  NavLinks,
-} from "./NavbarElements";
+import "./navBar.css";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 function Navbar({ toggleIsOpen }) {
   return (
     <>
-      <Nav>
-        <NavbarContainer>
-          <MenuIcon onClick={toggleIsOpen}>
+      <nav className="nav">
+        <div className="navBarContainer">
+          <div className="menuIcon" onClick={toggleIsOpen}>
             <FaBars />
-          </MenuIcon>
-          <NavMenu>
-            <NavItem>
-              <NavLinks to="home" smooth={true} duration={1000}>
+          </div>
+          <ul className="navMenu">
+            <li>
+              <Link to="home" smooth={true} duration={1000}>
                 {" "}
                 Home{" "}
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="about" smooth={true} duration={1000}>
+              </Link>
+            </li>
+            <li>
+              <Link to="about" smooth={true} duration={1000}>
                 {" "}
                 About{" "}
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="projects" smooth={true} duration={1000}>
+              </Link>
+            </li>
+            <li>
+              <Link to="projects" smooth={true} duration={1000}>
                 {" "}
                 Projects{" "}
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="contact" smooth={true} duration={1000}>
+              </Link>
+            </li>
+            <li>
+              <Link to="contact" smooth={true} duration={1000}>
                 {" "}
                 Contact{" "}
-              </NavLinks>
-            </NavItem>
-          </NavMenu>
-        </NavbarContainer>
-      </Nav>
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </>
   );
 }

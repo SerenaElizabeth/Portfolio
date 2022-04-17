@@ -1,37 +1,23 @@
 import React from "react";
-import {
-  AboutPageWrapper,
-  AboutPageContainer,
-  AboutRow,
-  Column1,
-  Column2,
-  TextWrapper,
-  ImgWrap,
-  Img,
-  Heading,
-  Subtitle,
-} from "./AboutPageElements";
+import "./aboutPage.css";
 import logo from "../../logo192.png";
 
 function AboutPage() {
   return (
-    <AboutPageContainer id="about">
-      <AboutPageWrapper>
-        <AboutRow>
-          <Column1>
-            <TextWrapper>
-              <Heading>About me</Heading>
-              <Subtitle>Something about me</Subtitle>
-            </TextWrapper>
-          </Column1>
-          <Column2>
-            <ImgWrap>
-              <Img src={logo} />
-            </ImgWrap>
-          </Column2>
-        </AboutRow>
-      </AboutPageWrapper>
-    </AboutPageContainer>
+    <div id="about" className="page">
+      <div className="aboutPageWrapper">
+        <div className="textWrapper">
+          <h1>About me</h1>
+          <p>Something about me</p>
+
+        </div>
+
+        <div className="imageWrapper">
+          <img src={logo} alt="logo" />
+
+        </div>
+      </div>
+    </div>
   );
 }
 

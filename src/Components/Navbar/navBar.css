@@ -1,0 +1,94 @@
+.nav {
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  color: #fff;
+
+}
+
+@media screen and (max-width: 960px) {
+  .nav {
+    transition: 0.8s all ease;
+  }
+}
+
+.navBarContainer {
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.menuIcon {
+  display: none;
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+  .menuIcon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 20%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+  }
+
+}
+
+ul.navMenu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  ul.navMenu {
+    display: none;
+  }
+}
+
+li {
+  padding: 0 25px;
+}
+
+li:hover {
+  color: #d9b8fa;
+  cursor: pointer;
+}
+
+Link {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+
+
+}
+
+Link:hover {
+  color: #9966cc;
+  transition: 0.2s ease-in-out;
+}
+
+Link:active {
+  border-bottom: 3px solid #000;
+}

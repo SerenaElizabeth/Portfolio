@@ -1,0 +1,59 @@
+#about {
+  color: white;
+  background: black;
+}
+
+@media screen and (max-width: 760px) {
+  #about {
+    padding: 100px 0;
+    ;
+  }
+}
+
+.aboutPageWrapper {
+  display: flex;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.textWrapper {}
+
+h1 {
+  color: white;
+  font-size: 58px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  margin-bottom: 16px;
+}
+
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+p {
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  max-width: 440px;
+}
+
+.imageWrapper {
+  max-width: 555px;
+}
+
+img {
+  padding-right: 0;
+  width: 80%;
+  height: 80%;
+}

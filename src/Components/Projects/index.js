@@ -12,7 +12,7 @@ import logo from "../../logo192.png";
 
 function Projects() {
   return (
-    <ProjectsContainer id="projects">
+    <ProjectsContainer id="projects" className="page">
       <ProjectsH1>Projects</ProjectsH1>
       <ProjectsWrapper>
         <ProjectCard>

@@ -20,21 +20,21 @@ function Contact() {
 
   return (
     <div id="contact" className="page">
-      <h1>Contact Me!</h1>
+      <h1>Get in touch</h1>
       <form action="" onSubmit={sendEmail}>
         <div className="form-section">
           <span>Name</span>
-          <input type="text" name="Name" required />
+          <input className="input" type="text" name="Name" required />
         </div>
         <div className="form-section">
           <span>Email</span>
-          <input type="text" name="Email" required />
+          <input className="input" type="text" name="Email" required />
         </div>
         <div className="form-section">
           <span>Message</span>
-          <input type="text" name="Message" required />
+          <textarea className="input" id="message-input" type="text" name="Message" required />
         </div>
-        <button>Submit</button>
+        <button>Send</button>
         <div>{result ? <div>Message sent</div> : null}</div>
       </form>
     </div>

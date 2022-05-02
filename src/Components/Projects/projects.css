@@ -25,3 +25,19 @@
   height: 150px;
 
 }
+
+#projects button {
+  width: 100%;
+  border: 0.5px solid white;
+  color: white;
+  padding: 5px;
+  background: none;
+  cursor: pointer;
+}
+
+#projects button:hover {
+  color: black;
+  padding: 5px;
+  background: white;
+  cursor: pointer;
+}

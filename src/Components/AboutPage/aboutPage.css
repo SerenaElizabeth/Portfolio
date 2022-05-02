@@ -13,15 +13,13 @@
 .aboutPageWrapper {
   display: flex;
   z-index: 1;
-  width: 100%;
   height: 100%;
   justify-content: center;
   align-items: center;
+  width: 65%;
+  margin: auto;
 }
 
-
-
-.textWrapper {}
 
 h1 {
   color: white;
@@ -48,12 +46,30 @@ p {
   max-width: 440px;
 }
 
-.imageWrapper {
-  max-width: 555px;
+.iconsWrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.textWrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 img {
   padding-right: 0;
   width: 80%;
   height: 80%;
+}
+
+.iconsWrapper .icon {
+  width: 50px;
+  height: 40px;
+  margin: 20px;
 }

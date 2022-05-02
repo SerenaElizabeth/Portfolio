@@ -1,17 +1,51 @@
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .form-section {
-    padding: 10px
+    padding: 10px;
+    display: flex;
+    max-width: 500px;
 }
 
 form span {
     margin-right: 10px;
+    min-width: 100px;
+
 }
 
 button {
     width: 200px;
     margin: auto;
+}
+
+.form-section .input,
+form button {
+    background: none;
+    border: none;
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    border-top: 0.5px solid white;
+    border-left: 0.5px solid white;
+    height: 25px;
+    width: 315px;
+    color: white;
+    padding: 5px 10px;
+}
+
+#message-input {
+    height: 160px;
+}
+
+form button {
+    width: 100px;
+    cursor: pointer;
+}
+
+form button:hover {
+    width: 100px;
+    color: black;
+    background-color: white;
 }

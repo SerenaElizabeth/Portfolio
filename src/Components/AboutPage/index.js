@@ -13,11 +13,11 @@ function AboutPage() {
           </p>
           <div className="iconContainer">
 
-            <a target='_blank' href="https://www.linkedin.com/in/serena-graham-8a2b7a200/">
+            <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/serena-graham-8a2b7a200/">
               <p>Find me on LinkedIn</p>
               <FaLinkedin className="icon" />
             </a>
-            <a target='_blank' href="https://github.com/SerenaElizabeth">
+            <a target='_blank' rel="noreferrer" href="https://github.com/SerenaElizabeth">
               <p>See my projects on github</p>
               <FaGithub className="icon" />
             </a>

@@ -6,7 +6,6 @@
 @media screen and (max-width: 760px) {
   #about {
     padding: 100px 0;
-    ;
   }
 }
 
@@ -20,6 +19,30 @@
   margin: auto;
 }
 
+.iconContainer .icon {
+  font-size: 40px;
+  color: white;
+  display: flex;
+}
+
+.iconContainer a {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  border: 0.5px solid white;
+  margin: 5px;
+}
+
+
+.iconContainer>a>p {
+  font-size: 16px;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.iconContainer {
+  display: flex;
+}
 
 h1 {
   color: white;
@@ -51,7 +74,11 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  height: 80vh;
+  border: 0.5px solid white;
+  margin: 30px 100px;
+  margin-top: 100px;
 }
 
 .textWrapper {
@@ -71,5 +98,15 @@ img {
 .iconsWrapper .icon {
   width: 50px;
   height: 40px;
-  margin: 20px;
+  margin: 0 25px;
+}
+
+.row {
+  display: flex;
+  font-size: 35px;
+}
+
+.row>div {
+  display: flex;
+  flex-direction: column-reverse;
 }

@@ -8,7 +8,7 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.REACT_APP_EMAIL_SERVICE_ID, process.env.REACT_APP_EMAIL_TEMPLATE_ID, e.target, process.env.REACT_APP_EMAIL_KEY)
+    emailjs.sendForm("service_e0bz0ko", "template_6rmcbyo", e.target, "JAO7wei7OdVP69MxZ")
       .then((result) => {
         console.log(result.text);
       }, (error) => {

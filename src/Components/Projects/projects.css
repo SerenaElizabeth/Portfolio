@@ -8,16 +8,15 @@
   flex-direction: row;
   justify-content: center;
   margin-bottom: 50px;
+  align-items: center;
 }
 
 .projects-card {
   width: 200px;
-  border-right: 5px solid white;
-  border-left: 0.5px solid white;
-  border-top: 0.5px solid white;
-  border-bottom: 5px solid white;
+  border: 0.5px solid white;
   margin: 30px;
   padding: 10px;
+  min-height: 250px;
 }
 
 
@@ -40,4 +39,12 @@
   padding: 5px;
   background: white;
   cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+
+  .projects-wrapper {
+    flex-direction: column;
+
+  }
 }

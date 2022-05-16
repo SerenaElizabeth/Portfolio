@@ -8,8 +8,9 @@
 }
 
 .page {
-  height: 100vh;
+  padding: 5px 5px;
   padding-top: 50px;
+  min-height: 100vh;
 }
 
 

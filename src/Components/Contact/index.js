@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./contact.css";
 import emailjs from '@emailjs/browser';
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Contact() {
   const [result, setResult] = useState(false)
@@ -37,6 +38,19 @@ function Contact() {
         <button>Send</button>
         <div>{result ? <div>Message sent</div> : null}</div>
       </form>
+
+      <div className="iconContainer">
+
+        <a target='_blank' href="https://www.linkedin.com/in/serena-graham-8a2b7a200/">
+          <p>Find me on LinkedIn</p>
+          <FaLinkedin className="icon" />
+        </a>
+        <a target='_blank' href="https://github.com/SerenaElizabeth">
+          <p>See my projects on github</p>
+          <FaGithub className="icon" />
+        </a>
+
+      </div>
     </div>
   );
 }

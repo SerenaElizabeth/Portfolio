@@ -1,5 +1,5 @@
 import React from "react";
-import video from "./video.mp4";
+// import video from "./video.mp4";
 import { FaArrowDown } from "react-icons/fa";
 import { Link } from 'react-scroll'
 import './introPage.css'
@@ -8,7 +8,7 @@ function IntroPage() {
   return (
     <div className='introPageContainer page' id="home">
       <div className="introPageBackground">
-        <video className="videoBg" autoPlay muted loop src={video} type="video/mp4" />
+        {/* <video className="videoBg" autoPlay muted loop src={video} type="video/mp4" /> */}
       </div>
       <div className="introPageContent">
         <h1 className='introH1'>Serena Graham</h1>

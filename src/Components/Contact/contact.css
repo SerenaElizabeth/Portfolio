@@ -8,6 +8,7 @@ form {
     padding: 10px;
     display: flex;
     max-width: 500px;
+    width: 100%;
 }
 
 form span {
@@ -24,11 +25,7 @@ button {
 .form-section .input,
 form button {
     background: none;
-    border: none;
-    border-bottom: 3px solid white;
-    border-right: 3px solid white;
-    border-top: 0.5px solid white;
-    border-left: 0.5px solid white;
+    border: 0.5px solid white;
     height: 25px;
     width: 315px;
     color: white;
@@ -48,4 +45,13 @@ form button:hover {
     width: 100px;
     color: black;
     background-color: white;
+}
+
+#contact .iconContainer {
+    width: 100%;
+    min-width: 300px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

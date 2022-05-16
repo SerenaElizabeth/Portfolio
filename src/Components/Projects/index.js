@@ -27,6 +27,11 @@ function Projects() {
           <p>A movie recommendation app created using React and Firebase</p>
           <a href="https://github.com/SerenaElizabeth/RecommendationApp" target='_blank'><button>Code</button></a>
         </div>
+        <div className="projects-card">
+          <h3>Portfolio</h3>
+          <p>Created using React</p>
+          <a href="https://github.com/SerenaElizabeth/Portfolio" target='_blank'><button>Code</button></a>
+        </div>
       </div>
     </div>
   );

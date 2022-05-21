@@ -32,6 +32,13 @@ function Projects() {
           <p>Created using React</p>
           <a rel="noreferrer" href="https://github.com/SerenaElizabeth/Portfolio" target='_blank'><button>Code</button></a>
         </div>
+        <div className="projects-card">
+
+          <h3>Trivia Quiz App</h3>
+          <p>A trivia app created using React and Typescript</p>
+          <a rel="noreferrer" href="https://https://github.com/SerenaElizabeth/quizApp" target='_blank'><button>Code</button></a>
+
+        </div>
       </div>
     </div>
   );
